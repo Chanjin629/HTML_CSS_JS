@@ -1,0 +1,39 @@
+<!-- 글쓰기 form 생성실습 -->
+<!-- 제목, 내용입력(사이즈넉넉하게), 예약여부(yes or no), 예약등록시간 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글쓰기 form 생성실습</title>
+</head>
+
+<body>
+    <form action="https://naver.com" method="post" enctype="application/x-www-form-urlencoded">
+        <h1>글쓰기 실습</h1>
+        <div>
+            <label for="title">제목</label>
+            <input type="text" name="title" id="title">
+        </div>
+        <div>
+            <label for="contents">내용</label>
+            <textarea name="contents" id="contents" cols="30" rows="10" placeholder="내용을 입력해주세요"></textarea>
+        </div>
+        <div>
+            <label for="appointment">예약여부</label>
+            <input type="radio" name="appointment" value="yes">yes
+            <input type="radio" name="appointment" value="no">no
+        </div>
+        <div>
+            <label for="appointment-time">예약시간</label>
+            <input type="datetime-local" name="appointment-time">
+        </div>
+        <div>
+            <button type="submit">글쓰기완료</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
