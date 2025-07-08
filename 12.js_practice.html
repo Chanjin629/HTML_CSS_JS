@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <label for="role">select</label>
+        <select name="role" id="role">
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select>
+        <input type="text" id="input1">
+        <input type="text" id="input2">
+        <button onclick="dataGet()">데이터 get</button>
+    </div>
+    <h2 id="result" style="text-align: center;">결과값</h2>
+    <script>
+        function dataGet() {
+            const value1 = Number(document.getElementById("input1").value);
+            const value2 = Number(document.getElementById("input2").value);
+            const calu = document.getElementById("role").value
+            if(calu == "plus"){
+                document.getElementById("result").innerHTML= value1 + value2;
+            } else if(calu === "minus"){
+                document.getElementById("result").innerHTML= value1 - value2;
+            } else if(calu === "multiply"){
+                document.getElementById("result").innerHTML= value1 * value2;
+            } else {
+                document.getElementById("result").innerHTML= value1 / value2;
+            }
+            
+        }
+    </script>
+</body>
+
+</html>
