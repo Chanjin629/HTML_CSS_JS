@@ -16,8 +16,6 @@
         </tbody>
     </table>
     <script>
-        const jsonText = '[{"name":"Alice","age":25,"score":85},{"name":"Bob","age":28,"score":92},{"name":"Charlie","age":32,"score":88}]';
-        // json을 javascript의 객체로 역직렬화(parsing)
         const obj1 = JSON.parse(jsonText);
         for(let i=0; i<obj1.length; i++){
             // js에서 문자열에 js 변수를 끼워넣을때 빽틱(`)에 ${}를 활용
